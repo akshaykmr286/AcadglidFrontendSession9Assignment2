@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Session9Assignment1_Popover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Main Style sheet for the project -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Needful libraries and frameworks-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Main div container started here -->
+<div class="container">
+    <!-- Table with class cordered and hover-->
+    <table class="table table-bordered table-hover"> 
+    <!-- table header with class info to make background color light blue-->
+      <tr>
+        <td class="col-md-3 active info">
+          <label>Row</label>
+        </td>
+        <td class="col-md-2 active info">
+         <label>First Name</label>
+        </td>
+        <td class="col-md-3 active info">
+         <label>Last Name</label>
+        </td>
+        <td class="col-md-3 active info">
+         <label>Email</label>
+        </td>
+        <td class="col-md-4 active info">
+         <label>Biography</label>
+        </td>
+      </tr>
+        <!-- Table body starts here-->
+      <tr>
+        <td class="col-md-3">
+          <label>1</label>
+        </td>
+        <td class="col-md-2">Akshay</td>
+        <td class="col-md-3">Nayak</td>
+        <td class="col-md-3">aks@gmail.com</td>
+        <td class="col-md-4">JS advance</td>
+      </tr>
+      <tr>
+        <td class="col-md-3">
+          <label>2</label>
+        </td>
+        <td class="col-md-2">Atish</td>
+        <td class="col-md-3">Nayak</td>
+        <td class="col-md-3">atish@gmail.com</td>
+        <td class="col-md-4">UI advance engineer</td>
+      </tr>
+      <tr>
+        <td class="col-md-3">
+          <label>3</label>
+        </td>
+        <td class="col-md-2">Babun</td>
+        <td class="col-md-3">Sahoo</td>
+        <td class="col-md-3">babun@gmail.com</td>
+        <td class="col-md-4">Angular 2 Expert</td>
+      </tr>
+    </table>
+</div>
+<!--script for popover -->
+<script>
+$(document).ready(function(){
+    $('button').popover();   
+});
+</script>
+
+</body>
+</html>
